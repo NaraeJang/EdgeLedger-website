@@ -21,7 +21,7 @@
 
 <body>
     <header class="hero blog">
-        <div id="navbar" class="navbar">
+        <div id="navbar" class="navbar top">
             <h1 class="logo">
                 <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
             </h1>
@@ -37,7 +37,7 @@
                         <a href="index.html#cases">Cases</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="index.html#blog">Blog</a>
                     </li>
                     <li>
                         <a href="index.html#contact">Contact</a>
@@ -61,13 +61,33 @@
             <p>With our expert team, you can rest assured that we'll develop bespoke solutions just for you.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloribus cumque quis sed totam quibusdam at deserunt eligendi ea dolore nemo, laudantium aliquid distinctio impedit, saepe facere, incidunt excepturi dolorem. Laborum modi quisquam maxime doloremque vero odio accusantium saepe nam dolorum, repudiandae amet rem id beatae iusto, a sit, nulla nostrum mollitia? Quos debitis voluptates, dolore earum molestias ducimus incidunt.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde doloribus cumque quis sed totam quibusdam
+                at deserunt eligendi ea dolore nemo, laudantium aliquid distinctio impedit, saepe facere, incidunt
+                excepturi dolorem. Laborum modi quisquam maxime doloremque vero odio accusantium saepe nam dolorum,
+                repudiandae amet rem id beatae iusto, a sit, nulla nostrum mollitia? Quos debitis voluptates, dolore
+                earum molestias ducimus incidunt.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis amet, tempore consequatur, atque rem in molestiae corrupti quia labore ducimus repudiandae perspiciatis facere dolore ullam ipsam consectetur temporibus maxime adipisci aspernatur itaque minus voluptatem. Obcaecati, voluptate consequuntur inventore incidunt commodi praesentium possimus doloremque, eaque voluptates suscipit reiciendis fugiat voluptas.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reiciendis amet, tempore consequatur, atque
+                rem in molestiae corrupti quia labore ducimus repudiandae perspiciatis facere dolore ullam ipsam
+                consectetur temporibus maxime adipisci aspernatur itaque minus voluptatem. Obcaecati, voluptate
+                consequuntur inventore incidunt commodi praesentium possimus doloremque, eaque voluptates suscipit
+                reiciendis fugiat voluptas.
             </p>
         </section>
     </main>
 
+
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+            } else {
+                navbar.classList.add('top');
+            }
+        }
+    </script>
 </body>
 
 <footer class="footer bg-dark">
