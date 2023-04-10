@@ -61,6 +61,7 @@ img {
     top: 0;
     padding: 0 30px;
     transition: 0.5s ease-in;
+    z-index: 10;
 }
 
 .navbar.top {
@@ -255,7 +256,6 @@ height: 30vh;
         flex-direction: column;
         height: 120px;
         padding: 20px;
-        z-index: 10;
     }
 
     .navbar a {
