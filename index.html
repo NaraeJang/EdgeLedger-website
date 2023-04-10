@@ -13,6 +13,7 @@
 
 
     <!-- css links -->
+    <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/style.css">
 
@@ -117,20 +118,45 @@
             </header>
             <div class="row">
                 <div class="column">
-                    <img src="image_resources/cases/cases1.jpg" alt="Cases image1">
-                    <img src="image_resources/cases/cases2.jpg" alt="Cases image2">
+                    <a href="image_resources/cases/cases1.jpg" data-lightbox="cases"
+                        data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                        <img src="image_resources/cases/cases1.jpg" alt="Cases image1"></a>
+
+                        <a href="image_resources/cases/cases2.jpg" 
+                        data-lightbox="cases"
+                        data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                        <img src="image_resources/cases/cases2.jpg" alt="Cases image2"></a>
+                    
                 </div>
                 <div class="column">
-                    <img src="image_resources/cases/cases3.jpg" alt="Cases image3">
-                    <img src="image_resources/cases/cases4.jpg" alt="Cases image4">
+                    <a href="image_resources/cases/cases3.jpg" data-lightbox="cases"
+                        data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                        <img src="image_resources/cases/cases3.jpg" alt="Cases image3"></a>
+
+                        <a href="image_resources/cases/cases4.jpg" 
+                        data-lightbox="cases"
+                        data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                        <img src="image_resources/cases/cases4.jpg" alt="Cases image4"></a>
                 </div>
                 <div class="column">
-                    <img src="image_resources/cases/cases5.jpg" alt="Cases image5">
-                    <img src="image_resources/cases/cases6.jpg" alt="Cases image6">
+                    <a href="image_resources/cases/cases5.jpg" data-lightbox="cases"
+                    data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                    <img src="image_resources/cases/cases5.jpg" alt="Cases image5"></a>
+
+                    <a href="image_resources/cases/cases6.jpg" 
+                    data-lightbox="cases"
+                    data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                    <img src="image_resources/cases/cases6.jpg" alt="Cases image6"></a>
                 </div>
                 <div class="column">
-                    <img src="image_resources/cases/cases7.jpg" alt="Cases image7">
-                    <img src="image_resources/cases/cases8.jpg" alt="Cases image8">
+                    <a href="image_resources/cases/cases7.jpg" data-lightbox="cases"
+                        data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                        <img src="image_resources/cases/cases7.jpg" alt="Cases image7"></a>
+
+                        <a href="image_resources/cases/cases8.jpg" 
+                        data-lightbox="cases"
+                        data-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, cumque.">
+                        <img src="image_resources/cases/cases8.jpg" alt="Cases image8"></a>
                 </div>
             </div>
         </section>
@@ -217,8 +243,12 @@
         </section>
     </main>
 
+    <!-- JSs -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script src="js/lightbox.min.js"></script>
+
     <script>
         const navbar = document.getElementById('navbar');
 
@@ -231,20 +261,19 @@
         }
 
         // Smooth Scrolling
-      $('#navbar a, .btn').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault();
+        $('#navbar a, .btn').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
 
-          const hash = this.hash;
+                const hash = this.hash;
 
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          );
-        }
-      });
+                $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
     </script>
 </body>
 
